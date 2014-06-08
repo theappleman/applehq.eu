@@ -1,0 +1,4 @@
+% layout 'default';
+% title 'ssh host fingerprints';
+
+<p>I've stopped maintaining the list of SSH fingerprints.</p>

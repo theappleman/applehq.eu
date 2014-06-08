@@ -1,0 +1,183 @@
+% layout 'default';
+% title 'fluffy';
+<h1>Little Busters!</h1>
+
+<p>Home Page: http://tlwiki.org/index.php?title=Little_Busters! <br />
+IRC: <a href="irc://irc.synirc.net/fluffy">#fluffy@irc.synirc.net</a></p>
+
+<h2>Getting Started</h2>
+
+<p>This procedure is only tested in Linux (with 32-bit completely problem free).
+I recommend using virtualisation, as it gets messy.</p>
+
+<p>On windows, I recommend getting PuTTY instead of using the virtual machine's
+window, and also getting WinSCP or filezilla for transfers to and from the VM.</p>
+
+<h3>Setup your environment</h3>
+
+<h4>Virtualisation</h4>
+
+<h5>On Windows</h5>
+
+<ul>
+<li><a href="https://www.virtualbox.org/">VirtualBox</a> (Recommended)</li>
+<li><a href="http://www.vmware.com/products/player/overview.html">VMWare Player</a></li>
+</ul>
+
+<h5>On Linux</h5>
+
+<ul>
+<li><a href="http://virt-manager.org/">Virt-manager</a>, <a href="http://libvirt.org/">libvirt</a>
+and/or <a href="http://www.linux-kvm.org">KVM</a></li>
+<li><a href="http://xen.org">Xen</a></li>
+</ul>
+
+<h5>Guest</h5>
+
+<p>Any 32 bit Linux distro. Grab a live CD.</p>
+
+<p><a href="http://www.ubuntu.com/">Ubuntu</a> is a good choice if you want no hassle, even
+if you decide to run it permanantly on bare metal.</p>
+
+<p>However, I prefer <a href="http://fedoraproject.org/">Fedora</a>.</p>
+
+<p>Whatever you choose, boot the live CD and install it to the virtual disk.</p>
+
+<h4>Cygwin</h4>
+
+<p><a href="http://cygwin.org/">Cygwin</a></p>
+
+<p>You need to pick quite a few packages from the installer. Don't worry, the
+installer is designed be run multiple times.</p>
+
+<h4>Distro packages</h4>
+
+<p>These packages, of any version, are available in Ubuntu, Fedora and Cygwin.
+Each might have subtlely different names, and may be hidden in very different
+categories.
+Install them.</p>
+
+<ul>
+<li>gcc</li>
+<li>gcc-c++</li>
+<li>make</li>
+<li>unzip</li>
+<li>git</li>
+<li>subversion</li>
+<li>git-svn</li>
+<li>libpng-devel</li>
+<li>wget</li>
+</ul>
+
+<h4>OCaml</h4>
+
+<p>You need OCaml 3.09 (or any later 3.09 point release) and a few dependancies.
+OCaml is notoriously bad at keeping backwards compatibility, so pay attention
+to version numbers.</p>
+
+<p>The exact numbers are in the rldev INSTALL file, and exact download URLs can be
+found in the kickstart file.</p>
+
+<p>As per usual, the standard procedure for installing each is:</p>
+
+<blockquote>
+  <p>./configure <br />
+    make <br />
+    make install</p>
+</blockquote>
+
+<p>However, some OCaml packages also have "opt" targets which are also required
+for rldev. Generally, it is safe to use:</p>
+
+<blockquote>
+  <p>make opt</p>
+</blockquote>
+
+<p>or  </p>
+
+<blockquote>
+  <p>make all.opt  </p>
+</blockquote>
+
+<p>on all of the packages. Only good things will come from that command; despite
+some giving off errors, nothing bad has happened.</p>
+
+<p>If you don't want all this hassle, but can boot CentOS kickstart files, take a
+look at fluffy-ks.cfg that should be accompanying this readme.</p>
+
+<h3>Get rldev</h3>
+
+<p>https://github.com/theappleman/rldev.git</p>
+
+<p>Rldev is stored in a git repository. Clone it, configure it and build:</p>
+
+<blockquote>
+  <p>git clone git://github.com/theappleman/rldev.git <br />
+    cd rldev/src <br />
+    ./configure <br />
+    omake <br />
+    omake install</p>
+</blockquote>
+
+<p>Check your PATH for the new commands</p>
+
+<blockquote>
+  <p>command -v rlc <br />
+    rlc --version</p>
+</blockquote>
+
+<h3>Grab the translation</h3>
+
+<p>Our translation is stored in subversion:</p>
+
+<blockquote>
+  <p>svn co svn://vndb.org/lb/applehq Scripts</p>
+</blockquote>
+
+<p>To build exerything, do:</p>
+
+<blockquote>
+  <p>cd Scripts <br />
+    make <br />
+    make ex me</p>
+</blockquote>
+
+<p>To update the scripts after someone has worked on it:</p>
+
+<blockquote>
+  <p>svn up <br />
+    make <br />
+    for i in ex me; do cd $i; make pclean; cd ..; done <br />
+    make ex me</p>
+</blockquote>
+
+<h3>Grab the images</h3>
+
+<p>Either grab the premade ones from the installer (open it with 7z) or remake
+your own.</p>
+
+<p>The vaconv utility in rldev doesn't seem to work on 64-bit systems, though.</p>
+
+<p>Edit up g00-gen.rb and it will plop the images into the right places.</p>
+
+<p>If grabbing the premade ones, be extra careful with the G00 and EG00
+directories. Take a look at the NSIS script for more info on why.</p>
+
+<h3>Package it all up</h3>
+
+<p>Get NSIS. You can either do that in the virtual machine or get the parts onto
+your windows box and run it there.</p>
+
+<p>If using it from linux, I recommend using wine and nsis for windows, rather than
+distribution packages for mingw32-nsis.</p>
+
+<h2>TODO</h2>
+
+<ul>
+<li>Things missing from the installer that were lost
+<ul>
+<li>Fonts (FontReg.nsh; needs work)</li>
+<li>Shortcuts (I'd like shortcuts to be off by default)</li>
+</ul></li>
+<li>Resource picking from the DVD</li>
+</ul>

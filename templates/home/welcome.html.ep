@@ -1,0 +1,6 @@
+% layout 'default';
+% title 'Welcome';
+<div class="jumbotron">
+<h2><%= $message %></h2>
+Now with a snazzy new style and easier server administration.
+</div>

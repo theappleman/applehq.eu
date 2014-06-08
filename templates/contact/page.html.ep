@@ -1,0 +1,41 @@
+% layout 'default';
+% title 'contact';
+<div id="hcard-Daniel-Cordero" class="vcard">
+ <span class="fn">Daniel Cordero</span>
+ &lt;<a class="email" href="mailto:contact@applehq.eu">contact@applehq.eu</a>&gt;
+ <div class="adr">
+  <span class="locality">Slough</span>
+, 
+  <span class="region">England</span>
+, 
+
+  <span class="country-name">United Kingdom</span>
+ </div>
+ <div class="tel">+44 7708221595</div>
+ <div class="tel">+44 7807753130</div>
+<!-- +44 07960873797 -->
+ <a class="url" href="xmpp:apple@neko.im">jabber</a>
+ <a class="url" href="xmpp:theappleman@gmail.com">jabber (gtalk)</a>
+ <a class="url" href="callto:theappleman">skype</a>
+ <br />
+ <a rel="me" class="url" href="https://twitter.com/applehq">twitter</a>
+ <a rel="me" class="url" href="https://youtube.com/applehq">youtube</a>
+ <a rel="me" class="url" href="https://plus.google.com/113683771247469124947">g+</a>
+ <a rel="me" class="url" href="https://github.com/theappleman">github</a>
+ <a rel="me" class="url" href="https://evolvehq.com/players/applehq">evolve</a>
+ <a rel="me" class="url" href="https://twitch.tv/applehq">twitch</a>
+ <a rel="me" class="url" href="http://steamcommunity.com/id/applehq">steam</a>
+ <a rel="me" class="url" href="http://nicovideo.jp/user/8683860">niconico</a>
+ <br />
+ <br />
+ gw: Arcane Apple, Archangel Apple<br />
+ gw2: applehq.9852 (Ruins of Surmia)<br />
+ grfs (uplay): <a rel="me" class="url" href="http://ghostreconnetwork.ubi.com/en-gb/pc/applehq">applehq</a>
+ <br />
+ <s>d*: applehq@londondiaspora.org</s><br />
+ xbl:
+ <a rel="me" class="url" href="https://live.xbox.com/en-GB/Profile?gamertag=applehq">applehq</a>,
+ <s><a rel="me" class="url" href="https://live.xbox.com/en-GB/Profile?gamertag=Apple%20the%20Man">Apple The Man</a></s><br />
+ psn/sen: applehq<br />
+ 0x142C8BF7213733E0 = 18CE B98E 8163 D2A2 570D  B1E0 142C 8BF7 2137 33E0<br />
+</div>
