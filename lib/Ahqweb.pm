@@ -8,6 +8,8 @@ sub startup {
   # Documentation browser under "/perldoc"
   $self->plugin('PODRenderer');
 
+  $self->config(hypnotoad => {listen => ['http://127.0.0.1:' . $ENV{PORT}]});
+
   # Router
   my $r = $self->routes;
 
