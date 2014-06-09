@@ -5,6 +5,10 @@
 <p>Home Page: http://tlwiki.org/index.php?title=Little_Busters! <br />
 IRC: <a href="irc://irc.synirc.net/fluffy">#fluffy@irc.synirc.net</a></p>
 
+<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/applehq/lists/fluffy" data-widget-id="475895003458195456">Tweets from https://twitter.com/applehq/lists/fluffy</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
 <h2>Getting Started</h2>
 
 <p>This procedure is only tested in Linux (with 32-bit completely problem free).
