@@ -2,13 +2,10 @@
 % title 'contact';
 <div id="hcard-Daniel-Cordero" class="vcard">
  <span class="fn">Daniel Cordero</span>
- &lt;<a class="email" href="mailto:contact@applehq.eu">contact@applehq.eu</a>&gt;
+ &lt;<a class="email" href="mailto:contact@xxoo.ws">contact@xxoo.ws</a>&gt;
  <div class="adr">
-  <span class="locality">Slough</span>
-, 
-  <span class="region">England</span>
-, 
-
+  <span class="locality">Slough</span>, 
+  <span class="region">England</span>, 
   <span class="country-name">United Kingdom</span>
  </div>
  <div class="tel">+44 7708221595</div>
