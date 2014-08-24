@@ -21,7 +21,6 @@
 	  <div class="navbar-collapse collapse navbar-inverse-collapse">
 	    <ul class="nav navbar-nav">
 	      <li <%== $page eq "home" ? 'class="active"' : '' %>><%= link_to home => '/' %></li>
-	      <li <%== $page eq "ssh-fingerprints" ? 'class="active"' : '' %>><%= link_to ssh => "/ssh-fingerprints" %></li>
 	      <li class="dropdown  <%= $page =~ /^projects/ ? 'active' : '' %>">
 		<a href="#" class="dropdown-toggle" data-toggle="dropdown">projects<b class="caret"></b></a>
 		<ul class="dropdown-menu">
