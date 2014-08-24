@@ -9,7 +9,7 @@
   <span class="country-name">United Kingdom</span>
  </div>
  <div class="tel">+44 7708221595</div>
- <div class="tel">+44 7807753130</div>
+ <s><div class="tel">+44 7807753130</div></s>
 <!-- +44 07960873797 -->
  <a class="url" href="xmpp:apple@neko.im">jabber</a>
  <a class="url" href="xmpp:theappleman@gmail.com">jabber (gtalk)</a>
