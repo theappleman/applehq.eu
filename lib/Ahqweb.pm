@@ -6,7 +6,7 @@ sub startup {
   my $self = shift;
 
   # Documentation browser under "/perldoc"
-  $self->plugin('PODRenderer');
+  #$self->plugin('PODRenderer');
 
   $self->config(hypnotoad => {listen => ['http://127.0.0.1:' . $ENV{PORT}]})
     if defined($ENV{PORT});
