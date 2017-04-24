@@ -33,6 +33,12 @@
 		<ul class="dropdown-menu">
 		  <li <%== $page eq "holly/postfix" ? 'class="active"' : '' %>><%= link_to postfix => "/holly/postfix" %></li>
 		</ul>
+		</li>
+		<li class="dropdown  <%= $page =~ /^nixos/ ? 'active' : '' %>">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown">nixos<b class="caret"></b></a>
+		<ul class="dropdown-menu">
+		  <li <%== $page eq "nixos/install" ? 'class="active"' : '' %>><%= link_to install => "/nixos/install" %></li>
+		</ul>
 	      </li>
 	      <li <%== $page eq "contact" ? 'class="active"' : '' %>><%= link_to contact => "/contact" %></li>
 	    </ul>

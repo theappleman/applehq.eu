@@ -24,6 +24,8 @@ sub startup {
   $r->get('/projects/gshis')->to('projects#gshis');
   
   $r->get('/holly/postfix')->to('holly#postfix');
+
+  $r->get('/nixos/install')->to('nixos#install');
 }
 
 1;
