@@ -23,7 +23,7 @@ span {
 </label>
 <input id="input-disk" type="text" value="sda" />
 <label for="input-branch">
-  <a href="https://nixos.org/channels/" title="Pick a channel from this page">Channel</a>:
+  Channel (<a href="https://nixos.org/channels/" title="Pick a channel from this page">?</a>):
 </label>
 <input id="input-branch" type="text" value="17.03-small" />
 
