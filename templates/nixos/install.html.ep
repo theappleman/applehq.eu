@@ -73,7 +73,7 @@ span {
     ];
   boot.loader.grub.enable = true;
   boot.loader.grub.version = 2;
-  boot.loader.grub.device = "/dev/sda";
+  boot.loader.grub.device = "/dev/<span class="disk">sda</span>";
   services.openssh.enable = true;
 }
 EOF</code>
