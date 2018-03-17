@@ -12,6 +12,5 @@ WORKDIR /app
 ADD . /app
 
 EXPOSE 8080
-CMD []
-ENTRYPOINT ["/usr/bin/hypnotoad", "-f"]
+CMD ["/usr/bin/hypnotoad", "-f", "script/ahqweb"]
 
