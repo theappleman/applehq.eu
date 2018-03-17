@@ -1,8 +1,7 @@
 % layout 'default';
 % title 'contact';
 <div id="hcard-applehq" class="vcard">
- <a class="email" href="mailto:contact@applehq.eu">contact@applehq.eu</a>;
- </div>
+ <a class="email" href="mailto:contact@applehq.eu">contact@applehq.eu</a>
  <br />
  <a rel="me" class="url" href="https://twitter.com/applehq">twitter</a>
  <a rel="me" class="url" href="https://youtube.com/applehq">youtube</a>
