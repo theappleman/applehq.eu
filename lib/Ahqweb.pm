@@ -28,14 +28,6 @@ sub startup {
   $r->get('/')->to('home#welcome');
   
   $r->get('/contact')->to('contact#page');
-  $r->get('/ssh-fingerprints')->to('fingerprints#page');
-  
-  $r->get('/projects/fluffy')->to('projects#fluffy');
-  $r->get('/projects/gshis')->to('projects#gshis');
-  
-  $r->get('/holly/postfix')->to('holly#postfix');
-
-  $r->get('/nixos/install')->to('nixos#install');
 }
 
 1;

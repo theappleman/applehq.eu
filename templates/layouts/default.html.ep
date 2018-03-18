@@ -21,25 +21,6 @@
 	  <div class="navbar-collapse collapse navbar-inverse-collapse">
 	    <ul class="nav navbar-nav">
 	      <li <%== $page eq "home" ? 'class="active"' : '' %>><%= link_to home => '/' %></li>
-	      <li class="dropdown  <%= $page =~ /^projects/ ? 'active' : '' %>">
-		<a href="#" class="dropdown-toggle" data-toggle="dropdown">projects<b class="caret"></b></a>
-		<ul class="dropdown-menu">
-		  <li <%== $page eq "projects/gshis" ? 'class="active"' : '' %>><%= link_to gshis => "/projects/gshis" %></li>
-		  <li <%== $page eq "projects/fluffy" ? 'class="active"' : '' %>><%= link_to fluffy => "/projects/fluffy" %></li>
-		</ul>
-	      </li>
-	      <li class="dropdown  <%= $page =~ /^holly/ ? 'active' : '' %>">
-		<a href="#" class="dropdown-toggle" data-toggle="dropdown">holly<b class="caret"></b></a>
-		<ul class="dropdown-menu">
-		  <li <%== $page eq "holly/postfix" ? 'class="active"' : '' %>><%= link_to postfix => "/holly/postfix" %></li>
-		</ul>
-		</li>
-		<li class="dropdown  <%= $page =~ /^nixos/ ? 'active' : '' %>">
-		<a href="#" class="dropdown-toggle" data-toggle="dropdown">nixos<b class="caret"></b></a>
-		<ul class="dropdown-menu">
-		  <li <%== $page eq "nixos/install" ? 'class="active"' : '' %>><%= link_to install => "/nixos/install" %></li>
-		</ul>
-	      </li>
 	      <li <%== $page eq "contact" ? 'class="active"' : '' %>><%= link_to contact => "/contact" %></li>
 	    </ul>
 	  </div>
